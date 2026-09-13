@@ -72,26 +72,18 @@ body {
     background-color: #004d99;
 }
 
-/* --- 背景が呼吸するように動くアニメーション定義 --- */
+/* --- 背景が優しく呼吸するように上品に動くアニメーション --- */
 @keyframes emma-breathe {
     0% {
-        background-size: 105% auto;
+        background-size: 102% auto;
         background-position: center top;
-    }
-    25% {
-        background-size: 108% auto;
-        background-position: 48% 2%;
     }
     50% {
         background-size: 105% auto;
-        background-position: 52% 0%;
-    }
-    75% {
-        background-size: 107% auto;
-        background-position: 50% 3% ;
+        background-position: center 2%;
     }
     100% {
-        background-size: 105% auto;
+        background-size: 102% auto;
         background-position: center top;
     }
 }
