@@ -1,4 +1,5 @@
 body {
+    /* --- 背景画像と全体の基本設定 --- */
     background-image: url('emma.jpg');
     background-size: cover;
     background-position: center top;
@@ -8,24 +9,27 @@ body {
     color: #333;
     margin: 0;
     min-height: 100vh;
-    min-height: 100dvh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     box-sizing: border-box;
-    position: relative;
+
+    /* --- ここで背景全体をウニウニ動かす --- */
+    animation: emma-breathe 15s ease-in-out infinite alternate;
 }
 
 .mobile-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 24px 24px 0 0;
-    padding: 25px 20px calc(25px + env(safe-area-inset-bottom)) 20px;
+    /* 下部の余白をしっかり多めにとって、ブラウザのバーに隠れないように調整 */
+    padding: 30px 20px calc(50px + env(safe-area-inset-bottom)) 20px;
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    z-index: 100;
+    position: relative;
 }
 
 .portal-badge {
@@ -39,16 +43,16 @@ body {
 
 .mobile-container h2 {
     margin-top: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #1a1a1a;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .mobile-container p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #444;
-    line-height: 1.4;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 .btn-launch {
@@ -66,4 +70,28 @@ body {
 
 .btn-launch:active {
     background-color: #004d99;
+}
+
+/* --- 背景が呼吸するように動くアニメーション定義 --- */
+@keyframes emma-breathe {
+    0% {
+        background-size: 105% auto;
+        background-position: center top;
+    }
+    25% {
+        background-size: 108% auto;
+        background-position: 48% 2%;
+    }
+    50% {
+        background-size: 105% auto;
+        background-position: 52% 0%;
+    }
+    75% {
+        background-size: 107% auto;
+        background-position: 50% 3% ;
+    }
+    100% {
+        background-size: 105% auto;
+        background-position: center top;
+    }
 }
