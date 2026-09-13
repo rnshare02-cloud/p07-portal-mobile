@@ -1,5 +1,5 @@
 body {
-    /* --- 背景画像と全体の基本設定 --- */
+    /* --- 背景画像と全体の基本設定（暴走防止のためアニメーションは解除） --- */
     background-image: url('emma.jpg');
     background-size: cover;
     background-position: center top;
@@ -13,9 +13,6 @@ body {
     align-items: flex-end;
     justify-content: center;
     box-sizing: border-box;
-
-    /* --- ここで背景全体をウニウニ動かす --- */
-    animation: emma-breathe 15s ease-in-out infinite alternate;
 }
 
 .mobile-container {
@@ -70,20 +67,4 @@ body {
 
 .btn-launch:active {
     background-color: #004d99;
-}
-
-/* --- 背景が優しく呼吸するように上品に動くアニメーション --- */
-@keyframes emma-breathe {
-    0% {
-        background-size: 102% auto;
-        background-position: center top;
-    }
-    50% {
-        background-size: 105% auto;
-        background-position: center 2%;
-    }
-    100% {
-        background-size: 102% auto;
-        background-position: center top;
-    }
 }
