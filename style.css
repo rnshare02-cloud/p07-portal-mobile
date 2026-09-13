@@ -1,17 +1,18 @@
 body {
-    /* --- 背景画像と全体の基本設定（暴走防止のためアニメーションは解除） --- */
+    /* --- 背景画像と全体の基本設定（Safari対策で固定を外しつつ安定化） --- */
     background-image: url('emma.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     color: #333;
     margin: 0;
     min-height: 100vh;
+    
+    /* --- Safariでも崩れないアンカー配置設定 --- */
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     box-sizing: border-box;
 }
 
