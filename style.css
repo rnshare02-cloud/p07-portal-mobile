@@ -1,5 +1,5 @@
 body {
-    /* --- 背景画像と全体の基本設定（Safari対策で固定を外しつつ安定化） --- */
+    /* --- 背景画像と全体の基本設定 --- */
     background-image: url('emma.jpg');
     background-size: cover;
     background-position: center top;
@@ -7,27 +7,29 @@ body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     color: #333;
     margin: 0;
-    min-height: 100vh;
-    
-    /* --- Safariでも崩れないアンカー配置設定 --- */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    /* 画面の高さを100%に固定し、スクロールさせない設計にする */
+    height: 100vh;
+    height: 100dvh; /* iOSの動くアドレスバー対策の最新規格 */
+    position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .mobile-container {
+    /* --- 絶対配置（absolute）で絶対に画面一番下にアンカーさせる --- */
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 24px 24px 0 0;
-    /* 下部の余白をしっかり多めにとって、ブラウザのバーに隠れないように調整 */
-    padding: 30px 20px calc(50px + env(safe-area-inset-bottom)) 20px;
+    /* 下部の余白をしっかり多めにとって、ホームバーやブラウザのバーに隠れないように調整 */
+    padding: 25px 20px calc(25px + env(safe-area-inset-bottom)) 20px;
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    position: relative;
 }
 
 .portal-badge {
@@ -49,8 +51,8 @@ body {
 .mobile-container p {
     font-size: 0.95rem;
     color: #444;
-    line-height: 1.5;
-    margin-bottom: 25px;
+    line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 .btn-launch {
