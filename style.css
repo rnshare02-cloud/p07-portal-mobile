@@ -8,22 +8,24 @@ body {
     color: #333;
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    min-height: 100dvh;
     box-sizing: border-box;
+    position: relative;
 }
 
 .mobile-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 24px 24px 0 0;
-    padding: 30px 20px calc(50px + env(safe-area-inset-bottom)) 20px;
+    padding: 25px 20px calc(25px + env(safe-area-inset-bottom)) 20px;
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .portal-badge {
@@ -37,16 +39,16 @@ body {
 
 .mobile-container h2 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #1a1a1a;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .mobile-container p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #444;
-    line-height: 1.5;
-    margin-bottom: 25px;
+    line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 .btn-launch {
