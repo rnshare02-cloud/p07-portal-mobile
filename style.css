@@ -1,0 +1,67 @@
+body {
+    background-image: url('emma.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 24px 24px 0 0;
+    padding: 30px 20px 40px 20px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+.portal-badge {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.mobile-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.mobile-container p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-launch {
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+}
+
+.btn-launch:active {
+    background-color: #004d99;
+}
