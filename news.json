@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "serviceVersion": "0.6.0",
+  "serviceVersion": "0.6.1",
   "date": "2026-09-15",
   "title": "Narrative Experience Update",
   "summary": "物語生成に Volume / Genre / Tempo / Dialogue / Focus を追加し、PC・スマホポータルに更新情報欄を追加しました。",
@@ -9,12 +9,12 @@
     "P-07 Default: 近未来サイバーパンク × ちょっと不思議 × 文庫調",
     "Standard Volume: 約8,000〜12,000字を目標",
     "What's New / Release Notes / System Status の基盤を追加",
-    "Name Leak Guard / CH01-CH12公開境界 / Master V7.3.3 に同期"
+    "Name Leak Guard / CH01-CH12公開境界 / Master V7.3.4 に同期"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
     "Reader Preference拡張"
   ],
   "publicChapterMax": 12,
-  "masterVersion": "7.3.3"
+  "masterVersion": "7.3.4"
 }
