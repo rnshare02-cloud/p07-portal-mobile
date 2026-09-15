@@ -1,6 +1,6 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.2', date: '2026-09-15', title: 'Narrative Experience Update',
+    version: '0.6.1', date: '2026-09-15', title: 'Narrative Experience Update',
     summary: '物語生成に Volume / Genre / Tempo / Dialogue / Focus の5項目を追加しました。'
   };
   const render = d => {
