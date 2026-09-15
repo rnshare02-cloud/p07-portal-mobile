@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "serviceVersion": "0.6.1",
   "date": "2026-09-15",
-  "title": "Narrative Experience Update",
-  "summary": "物語生成に Volume / Genre / Tempo / Dialogue / Focus を追加し、PC・スマホポータルに更新情報欄を追加しました。",
+  "title": "CH01 Minimum Prompt Pilot",
+  "summary": "CH01でProviderへ渡す情報を章に必要な最小限へ絞り、語り手を「俺」に固定するContext Minimizationを導入しました。",
   "details": [
-    "Narrative Settings: Volume / Genre / Tempo / Dialogue / Focus",
-    "P-07 Default: 近未来サイバーパンク × ちょっと不思議 × 文庫調",
-    "Standard Volume: 約8,000〜12,000字を目標",
-    "What's New / Release Notes / System Status の基盤を追加",
-    "Name Leak Guard / CH01-CH12公開境界 / Master V7.3.4 に同期"
+    "CH01: Minimum Prompt / Context Minimization",
+    "UI上の主人公はProvider側では「俺」に固定",
+    "CH01に不要な年齢・Entity・Master・制御メタデータをProvider Promptから除外",
+    "固定進行・振り返らない理由・浮上原因・視点変化原因・中年の男の発言境界は維持",
+    "Volume / Genre / Tempo / Dialogue / Focus は短い表現設定として維持",
+    "CH02以降はv0.6.0系Promptを維持するパイロット"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
