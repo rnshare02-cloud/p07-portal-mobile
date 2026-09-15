@@ -1,6 +1,6 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.2', date: '2026-09-15', title: 'Narrative Experience Update',
+    version: '0.6.3', date: '2026-09-15', title: 'Narrative Experience Update',
     summary: '\u7269\u8a9e\u751f\u6210\u306b Volume / Genre / Tempo / Dialogue / Focus \u306e5\u9805\u76ee\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002'
   };
   const render = d => {

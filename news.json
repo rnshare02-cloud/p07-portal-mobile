@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "serviceVersion": "0.6.2",
+  "serviceVersion": "0.6.3",
   "date": "2026-09-15",
   "title": "CH01 Minimum Prompt Pilot",
   "summary": "CH01でProviderへ渡す情報を章に必要な最小限へ絞り、語り手を「俺」に固定するContext Minimizationを導入しました。",
