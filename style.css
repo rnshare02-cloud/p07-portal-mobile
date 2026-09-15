@@ -1,73 +1,20 @@
 body {
-    /* --- 背景画像と全体の基本設定 --- */
-    background-image: url('emma.jpg');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-image: url('emma.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    color: #333;
-    margin: 0;
-    height: 100vh;
-    height: 100dvh;
-    position: relative;
-    box-sizing: border-box;
-    /* --- 修正：hiddenをやめて、はみ出してもスクロールできるように安全化 --- */
-    overflow-y: auto;
+    color:#333; margin:0; height:100vh; height:100dvh; position:relative; box-sizing:border-box; overflow-y:auto;
 }
-
-.mobile-container {
-    /* --- 絶対配置（absolute）で絶対に画面一番下にアンカーさせる --- */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 24px 24px 0 0;
-    /* 下部の余白をしっかり多めにとって、ホームバーやブラウザのバーに隠れないように調整 */
-    padding: 25px 20px calc(25px + env(safe-area-inset-bottom)) 20px;
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
-}
-
-.portal-badge {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    color: #1a1a1a;
-    margin-bottom: 4px;
-}
-
-.mobile-container h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #1a1a1a;
-    margin-bottom: 10px;
-}
-
-.mobile-container p {
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
-
-.btn-launch {
-    display: block;
-    text-align: center;
-    padding: 14px 20px;
-    background-color: #0066cc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 1.05rem;
-    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
-}
-
-.btn-launch:active {
-    background-color: #004d99;
-}
+.mobile-container { position:absolute; bottom:0; left:0; width:100%; max-width:100%; background-color:rgba(255,255,255,.95); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-radius:24px 24px 0 0; padding:25px 20px calc(25px + env(safe-area-inset-bottom)) 20px; box-shadow:0 -10px 30px rgba(0,0,0,.4); box-sizing:border-box; }
+.portal-badge { display:block; font-size:1.1rem; font-weight:bold; letter-spacing:.08em; color:#1a1a1a; margin-bottom:4px; }
+.mobile-container h2 { margin-top:0; font-size:1.5rem; color:#1a1a1a; margin-bottom:10px; }
+.mobile-container p { font-size:.95rem; color:#444; line-height:1.4; margin-bottom:20px; }
+.update-panel { margin:0 0 16px; border:1px solid rgba(0,0,0,.12); border-radius:12px; background:rgba(255,255,255,.68); overflow:hidden; }
+.update-panel summary { cursor:pointer; padding:10px 12px; font-weight:700; font-size:.92rem; list-style:none; }
+.update-panel summary::-webkit-details-marker { display:none; }
+.update-panel summary::after { content:'＋'; float:right; }
+.update-panel[open] summary::after { content:'−'; }
+.update-version { margin-left:6px; font-weight:600; color:#666; }
+.update-body { padding:0 12px 10px; border-top:1px solid rgba(0,0,0,.08); }
+.update-body p { margin:6px 0 0; font-size:.88rem; }
+.update-meta { padding-top:8px; font-size:.78rem; color:#666; }
+.btn-launch { display:block; text-align:center; padding:14px 20px; background-color:#0066cc; color:#fff; text-decoration:none; border-radius:12px; font-weight:bold; font-size:1.05rem; box-shadow:0 4px 15px rgba(0,102,204,.4); }
+.btn-launch:active { background-color:#004d99; }
