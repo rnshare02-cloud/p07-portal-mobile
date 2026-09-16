@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "serviceVersion": "0.6.3",
-  "date": "2026-09-15",
-  "title": "CH01 Minimum Prompt Pilot",
-  "summary": "CH01でProviderへ渡す情報を章に必要な最小限へ絞り、語り手を「俺」に固定するContext Minimizationを導入しました。",
+  "serviceVersion": "0.6.4",
+  "date": "2026-09-16",
+  "title": "v0.6.4 更新 — 最新版への切り替えを安定化",
+  "summary": "ブラウザに古い版が残る場合でも、現在の正常版を守りながら最新のPrompt Builderへ安全に切り替わる更新機構を追加しました。",
   "details": [
-    "CH01: Minimum Prompt / Context Minimization",
-    "UI上の主人公はProvider側では「俺」に固定",
-    "CH01に不要な年齢・Entity・Master・制御メタデータをProvider Promptから除外",
-    "固定進行・振り返らない理由・浮上原因・視点変化原因・中年の男の発言境界は維持",
-    "Volume / Genre / Tempo / Dialogue / Focus は短い表現設定として維持",
-    "CH02以降はv0.6.0系Promptを維持するパイロット"
+    "旧版キャッシュを先に削除せず、新しい版の準備完了後に切り替えます",
+    "更新確認に失敗した場合は現在の正常版を維持します",
+    "同じ更新で再読み込みが繰り返されないよう制御します",
+    "必要な場合は「更新を再確認」から安全に再試行できます",
+    "Master V7.3.4 / 公開範囲 CH01–CH12 は変更ありません"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
