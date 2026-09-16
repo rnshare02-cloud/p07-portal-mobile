@@ -12,5 +12,10 @@
   fetch('news.json',{cache:'no-store'})
     .then(r=>{ if(!r.ok) throw new Error('http'); return r.json(); })
     .then(d=>{ localStorage.setItem('p07-latest-update',JSON.stringify(d)); render(d); })
-    .catch(()=>{ try { render(JSON.parse(localStorage.getItem('p07-latest-update'))||FALLBACK); } catch { render(FALLBACK); } });
+    .catch(()=>{
+      try {
+        const cached = JSON.parse(localStorage.getItem('p07-latest-update'));
+        render(cached && (cached.serviceVersion||cached.version) === FALLBACK.version ? cached : FALLBACK);
+      } catch { render(FALLBACK); }
+    });
 })();
