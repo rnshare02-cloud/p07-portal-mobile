@@ -1,7 +1,7 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.3', date: '2026-09-15', title: 'Narrative Experience Update',
-    summary: '\u7269\u8a9e\u751f\u6210\u306b Volume / Genre / Tempo / Dialogue / Focus \u306e5\u9805\u76ee\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002'
+    version: '0.6.3', date: '2026-09-15', title: 'CH01 Minimum Prompt Pilot',
+    summary: '\u0043\u0048\u0030\u0031\u3067Provider\u3078\u6e21\u3059\u60c5\u5831\u3092\u7ae0\u306b\u5fc5\u8981\u306a\u6700\u5c0f\u9650\u3078\u7d5e\u308a\u3001\u8a9e\u308a\u624b\u3092\u300c\u4ffa\u300d\u306b\u56fa\u5b9a\u3059\u308bContext Minimization\u3092\u5c0e\u5165\u3057\u307e\u3057\u305f\u3002'
   };
   const render = d => {
     document.querySelectorAll('[data-update-version]').forEach(e=>e.textContent='v'+(d.serviceVersion||d.version));
