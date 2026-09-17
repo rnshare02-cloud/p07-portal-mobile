@@ -1,7 +1,7 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.4', date: '2026-09-16', title: 'v0.6.4 \u66f4\u65b0 \u2014 \u6700\u65b0\u7248\u3078\u306e\u5207\u308a\u66ff\u3048\u3092\u5b89\u5b9a\u5316',
-    summary: '\u30d6\u30e9\u30a6\u30b6\u306b\u53e4\u3044\u7248\u304c\u6b8b\u308b\u5834\u5408\u3067\u3082\u3001\u73fe\u5728\u306e\u6b63\u5e38\u7248\u3092\u5b88\u308a\u306a\u304c\u3089\u6700\u65b0\u306ePrompt Builder\u3078\u5b89\u5168\u306b\u5207\u308a\u66ff\u308f\u308b\u66f4\u65b0\u6a5f\u69cb\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002'
+    version: '0.6.5', date: '2026-09-17', title: "重要：Prompter v1.0.0 公開URL変更のお知らせ",
+    summary: "Prompterは v1.0.0 として https://p07-prompter.pages.dev/ へ移行しました。旧PWA（p07-mobile-prompt-builder-preview.r-n-share01.workers.dev）をご利用中の方は、新しい「プロンプターを起動する」から開き、ホーム画面へ再追加してください。旧URLは移行確認期間中のみ保持します。Prompt内容・Guard・Master境界に変更はありません。"
   };
   const render = d => {
     document.querySelectorAll('[data-update-version]').forEach(e=>e.textContent='v'+(d.serviceVersion||d.version));

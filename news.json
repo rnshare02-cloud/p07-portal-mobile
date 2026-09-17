@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "serviceVersion": "0.6.4",
-  "date": "2026-09-16",
-  "title": "v0.6.4 更新 — 最新版への切り替えを安定化",
-  "summary": "ブラウザに古い版が残る場合でも、現在の正常版を守りながら最新のPrompt Builderへ安全に切り替わる更新機構を追加しました。",
+  "serviceVersion": "0.6.5",
+  "date": "2026-09-17",
+  "title": "重要：Prompter v1.0.0 公開URL変更のお知らせ",
+  "summary": "Prompterは v1.0.0 として https://p07-prompter.pages.dev/ へ移行しました。旧PWA（p07-mobile-prompt-builder-preview.r-n-share01.workers.dev）をご利用中の方は、新しい「プロンプターを起動する」から開き、ホーム画面へ再追加してください。旧URLは移行確認期間中のみ保持します。Prompt内容・Guard・Master境界に変更はありません。",
   "details": [
-    "旧版キャッシュを先に削除せず、新しい版の準備完了後に切り替えます",
-    "更新確認に失敗した場合は現在の正常版を維持します",
-    "同じ更新で再読み込みが繰り返されないよう制御します",
-    "必要な場合は「更新を再確認」から安全に再試行できます",
-    "Master V7.3.4 / 公開範囲 CH01–CH12 は変更ありません"
+    "新URL: https://p07-prompter.pages.dev/",
+    "旧URL: https://p07-mobile-prompt-builder-preview.r-n-share01.workers.dev/",
+    "旧URLから追加済みのPWAは新URLのPWAへ自動変換されません",
+    "新URLを開き、必要に応じてホーム画面へ再追加してください",
+    "旧URLは移行確認期間中のみRollback / Compatibility確認用として保持します",
+    "Prompt内容・Guard・Master境界・公開範囲CH01–CH12に変更はありません"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
