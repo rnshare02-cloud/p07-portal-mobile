@@ -1,7 +1,7 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.5', date: '2026-09-17', title: "重要：Prompter v1.0.0 公開URL変更のお知らせ",
-    summary: "Prompterは v1.0.0 として https://p07-prompter.pages.dev/ へ移行しました。旧PWA（p07-mobile-prompt-builder-preview.r-n-share01.workers.dev）をご利用中の方は、新しい「プロンプターを起動する」から開き、ホーム画面へ再追加してください。旧URLは移行確認期間中のみ保持します。Prompt内容・Guard・Master境界に変更はありません。"
+    version: '0.6.5', date: '2026-09-18', title: "重要：旧Prompter URL提供終了のお知らせ",
+    summary: "Prompter v1.0.0 への移行完了に伴い、旧Prompter URLの提供を終了します。旧PWAをご利用中の方は、新しい「プロンプターを起動する」から https://p07-prompter.pages.dev/ を開き、ホーム画面へ再追加してください。Prompt内容・Guard・Master境界に変更はありません。"
   };
   const render = d => {
     document.querySelectorAll('[data-update-version]').forEach(e=>e.textContent='v'+(d.serviceVersion||d.version));
