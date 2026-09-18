@@ -21,3 +21,43 @@ body {
 .info-links { margin-top:14px; text-align:center; }
 .privacy-link { color:#4b5563; font-size:.82rem; text-decoration:underline; text-underline-offset:2px; }
 .privacy-link:hover, .privacy-link:focus { color:#0066cc; }
+
+/*
+ * CASE-B diagnostic candidate:
+ * Compact only when the actual CSS viewport is narrow.
+ * The 360px threshold is provisional and must be validated on real devices.
+ */
+@media (max-width: 360px) {
+    .mobile-container {
+        padding:16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
+    }
+
+    .portal-badge {
+        margin-bottom:2px;
+    }
+
+    .mobile-container h2 {
+        margin-bottom:8px;
+    }
+
+    .card-content > p {
+        margin-top:0;
+        margin-bottom:12px;
+    }
+
+    .update-panel {
+        margin-bottom:12px;
+    }
+
+    .update-panel summary {
+        padding:8px 10px;
+    }
+
+    .btn-launch {
+        padding:12px 16px;
+    }
+
+    .info-links {
+        margin-top:10px;
+    }
+}
