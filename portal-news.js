@@ -1,7 +1,7 @@
 (() => {
   const FALLBACK = {
-    version: '0.6.5', date: '2026-09-18', title: "重要：旧Prompter URL提供終了のお知らせ",
-    summary: "Prompter v1.0.0 への移行完了に伴い、旧Prompter URLの提供を終了します。旧PWAをご利用中の方は、新しい「プロンプターを起動する」から https://p07-prompter.pages.dev/ を開き、ホーム画面へ再追加してください。Prompt内容・Guard・Master境界に変更はありません。"
+    version: '1.0.0', date: '2026-09-18', title: "P-07 Portal v1.0.0 — Version体系を正式統一",
+    summary: "PC / Mobile Portalの製品Versionを P-07 Portal v1.0.0 へ統一しました。公開URL、Prompter導線、GA4、Privacy / Analytics、Canon、Master、Guard、Prompt仕様、公開章境界は変更していません。"
   };
   const render = d => {
     document.querySelectorAll('[data-update-version]').forEach(e=>e.textContent='v'+(d.serviceVersion||d.version));
