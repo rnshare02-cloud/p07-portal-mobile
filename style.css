@@ -21,3 +21,42 @@ body {
 .info-links { margin-top:14px; text-align:center; }
 .privacy-link { color:#4b5563; font-size:.82rem; text-decoration:underline; text-underline-offset:2px; }
 .privacy-link:hover, .privacy-link:focus { color:#0066cc; }
+
+/*
+ * CASE-B compact candidate.
+ * Breakpoint is based on measured CSS viewport width, not physical screen size.
+ */
+@media (max-width: 360px) {
+    .mobile-container {
+        padding:12px 14px calc(12px + env(safe-area-inset-bottom)) 14px;
+    }
+
+    .portal-badge {
+        margin-bottom:1px;
+    }
+
+    .mobile-container h2 {
+        margin-bottom:6px;
+    }
+
+    .card-content > p {
+        margin-top:0;
+        margin-bottom:8px;
+    }
+
+    .update-panel {
+        margin-bottom:9px;
+    }
+
+    .update-panel summary {
+        padding:7px 10px;
+    }
+
+    .btn-launch {
+        padding:11px 16px;
+    }
+
+    .info-links {
+        margin-top:7px;
+    }
+}
