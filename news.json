@@ -1,22 +1,20 @@
 {
   "schemaVersion": 1,
   "serviceVersion": "1.0.0",
-  "date": "2026-09-18",
-  "title": "P-07 Portal v1.0.0 — Version体系を正式統一",
-  "summary": "PC / Mobile Portalの製品Versionを P-07 Portal v1.0.0 へ統一しました。公開URL、Prompter導線、GA4、Privacy / Analytics、Canon、Master、Guard、Prompt仕様、公開章境界は変更していません。",
+  "date": "2026-09-21",
+  "title": "P-07 Prompter — CH20まで公開",
+  "summary": "物語プロンプターの公開生成範囲をCH01–CH20へ拡張しました。CH13–CH20のプロンプト生成に対応し、CH21以降は未公開のままLOCKされています。既存CH01–CH12の生成仕様・Guard・Canon境界は変更していません。",
   "details": [
-    "PC Portal / Mobile Portal: P-07 Portal v1.0.0",
-    "P-07 Prompter v1.0.0 は別製品としてVersion管理を継続",
-    "公開URL変更なし",
-    "Prompter導線変更なし",
-    "GA4 / Privacy / Analytics変更なし",
-    "Canon / Master / UNKNOWN / Guard / Prompt生成ロジック変更なし",
-    "CH01–CH12 / CH13+境界変更なし"
+    "Prompter公開生成範囲: CH01–CH20",
+    "CH13–CH20のプロンプト生成に対応",
+    "CH21以降: LOCKED / UNRELEASED",
+    "既存CH01–CH12の生成仕様・Guard・Canon境界変更なし",
+    "P-07 Portal製品Version: v1.0.0 維持"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
     "Reader Preference拡張"
   ],
-  "publicChapterMax": 12,
+  "publicChapterMax": 20,
   "masterVersion": "7.3.4"
 }

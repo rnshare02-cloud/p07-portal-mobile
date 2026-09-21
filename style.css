@@ -60,3 +60,13 @@ body {
         margin-top:7px;
     }
 }
+
+
+/* CH20 notice: keep the update history inside a compact scroll area. */
+.update-body {
+    max-height: 220px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 6px;
+}
