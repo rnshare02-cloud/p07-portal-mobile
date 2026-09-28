@@ -1,20 +1,19 @@
 {
   "schemaVersion": 1,
   "serviceVersion": "1.0.0",
-  "date": "2026-09-21",
-  "title": "P-07 Prompter — CH20まで公開",
-  "summary": "物語プロンプターの公開生成範囲をCH01–CH20へ拡張しました。CH13–CH20のプロンプト生成に対応し、CH21以降は未公開のままLOCKされています。既存CH01–CH12の生成仕様・Guard・Canon境界は変更していません。",
+  "date": "2026-09-26",
+  "title": "P-07 Prompter — FIRST SEASON CH01–CH26 全章公開",
+  "summary": "P-07 PrompterのFIRST SEASON公開生成範囲はCH01–CH26です。CH26はFIRST SEASON最終章です。既存の生成仕様・Guard・Canon境界を維持したまま、FIRST SEASON全章を公開しています。",
   "details": [
-    "Prompter公開生成範囲: CH01–CH20",
-    "CH13–CH20のプロンプト生成に対応",
-    "CH21以降: LOCKED / UNRELEASED",
-    "既存CH01–CH12の生成仕様・Guard・Canon境界変更なし",
+    "FIRST Prompter公開生成範囲: CH01–CH26",
+    "CH21–CH26を公開済み / CH26がFIRST SEASON最終章",
+    "P-07 MASTER CANON V7.3.6系のGuard / Canon境界を維持",
     "P-07 Portal製品Version: v1.0.0 維持"
   ],
   "comingSoon": [
     "Trend Assist（オンライン時の動的候補取得）",
     "Reader Preference拡張"
   ],
-  "publicChapterMax": 20,
-  "masterVersion": "7.3.4"
+  "publicChapterMax": 26,
+  "masterVersion": "7.3.6"
 }
